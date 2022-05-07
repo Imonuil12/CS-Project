@@ -1,3 +1,4 @@
+from secrets import choice
 import time
 print("|---------------------------------------------|")
 print("| Hello Friends, Welcome to TicTacToe Game!!! |")
@@ -87,4 +88,26 @@ def update_table(player, choice):
                 table[table.index(i)][i.index(j)]=player[-1]
     display_table()
     check_status(player)
+    
+def validate(choice ):
+    global used_numbers
+    if choice not in used_numbers:
+        used_numbers.append(choice)
+    else:
+        print("Already used, Choose again!!!". title())
+        play()
+        
+def play():
+    display_table()
+    global player_1_status, player_2_status
+    while game_status == 'playing':
+        
+        if player_1_status:
+            choice = int(input(f"{player_1[0]} enter your choice: "))
+            validate(choice)
+            player_1_status = False
+            player_2_status = True
+            update_table(player_1, choice)
+            
+        
 
