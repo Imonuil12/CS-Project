@@ -109,5 +109,11 @@ def play():
             player_2_status = True
             update_table(player_1, choice)
             
-        
+        elif player_2_status:
+            choice = int(input(f"{player_2[0]} enter your choice: "))
+            validate(choice)
+            player_2_status = False
+            player_1_status = True
+            update_table(player_2, choice)
+play()
 
