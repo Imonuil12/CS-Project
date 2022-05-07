@@ -16,5 +16,9 @@ player_2_status = False
 game_status = 'playing'
 used_numbers = []
 
-table = []
+table = [
+    [1,2,3],
+    [4,5,6],
+    [7,8,9]
+]
 
