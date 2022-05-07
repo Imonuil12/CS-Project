@@ -43,6 +43,17 @@ def check_column():
         return True
     else:
         return False
+    
+def check_row():
+    
+    col_1 = table[0]
+    col_2 = table[1]
+    col_3 = table[2]
+    
+    if col_1.count(col_1[0])==3 or col_2.count(col_2[0])==3 or col_3.count(col_3[0])==3:
+        return True
+    else:
+        return False
 
 
 
