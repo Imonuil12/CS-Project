@@ -22,3 +22,16 @@ table = [
     [7,8,9]
 ]
 
+def display_table();
+    print("\n")
+    for i in table:
+        print("-------------")
+        for j in i:
+            print('| ', end="")
+            print(j, end="")
+            print("|", end="\n")
+            print("---------------")
+            print("\n")
+            
+              
+            
