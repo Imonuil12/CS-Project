@@ -22,7 +22,7 @@ table = [
     [7,8,9]
 ]
 
-def display_table();
+def display_table():
     print("\n")
     for i in table:
         print("-------------")
@@ -33,5 +33,18 @@ def display_table();
             print("---------------")
             print("\n")
             
-              
+def check_column():
+    
+    row_1=[i[0] for i in table]
+    row_2=[i[1] for i in table]
+    row_3=[i[2] for i in table]
+    
+    if row_1.count(row_1[0])==3 or row_2.count(row_2[0])==3 or row_3.count(row_3[0])==3:
+        return True
+    else:
+        return False
+
+
+
+    
             
