@@ -55,7 +55,28 @@ def check_row():
     else:
         return False
 
+def check_dioganal():
+	d_1 = [table[i][i] for i in range(3)]
+	d_2 = [
+		table[0][2],
+		table[1][1],
+		table[2][0],
+	]
+
+	if d_1.count(d_1[0])==3 or d_2.count(d_2[0])==3:
+		return True
+	else:
+		return False
 
 
-    
-            
+def check_status(player):
+	global game_status
+	if check_dioganal() == True or check_column() == True or check_row() == True:
+		print(f"GOOD JOB {player[0]}, You are the winner !!!")
+		game_status = "stop"
+		return True
+	else:
+		return False
+
+
+
