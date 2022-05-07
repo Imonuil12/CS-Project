@@ -10,3 +10,11 @@ time.sleep(0.8)
 
 player_1= [input("Player 1 enter your name: "), "X"]
 player_2 = [input("Player 2 enter your name: "), "O"]
+
+player_1_status = True
+player_2_status = False
+game_status = 'playing'
+used_numbers = []
+
+table = []
+
