@@ -78,5 +78,13 @@ def check_status(player):
 	else:
 		return False
 
-
+def update_table(player, choice):
+    global table
+    for i in table:
+        for j in i:
+            if j==choice:
+                print(j)
+                table[table.index(i)][i.index(j)]=player[-1]
+    display_table()
+    check_status(player)
 
