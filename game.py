@@ -29,3 +29,16 @@ def btn_click(operand):
     text_input.delete(0, END)
     text_input.insert(0, expression)
     
+def solve():
+    global status
+    expression = get_expr()
+    try:
+        solution = eval(expression.lower())
+        text_input.delete(0, END)
+        text_input.insert(0, solution)
+    except Exception as e:
+        text_input.delete(0, END)
+        text_input.insert(0, "Error: " + str(e))
+        
+    status = True
+    
