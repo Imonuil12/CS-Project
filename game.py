@@ -23,3 +23,9 @@ def get_expr(operand=""):
     global expression
     expression = text_input.get() + str(operand)
     return expression
+
+def btn_click(operand):
+    expression = get_expr(operand)
+    text_input.delete(0, END)
+    text_input.insert(0, expression)
+    
