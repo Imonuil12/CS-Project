@@ -42,3 +42,11 @@ def solve():
         
     status = True
     
+def clear():
+    text_input.delete(0, END)
+    
+def clear_one():
+    expression = get_expr()
+    text_input.delete(0, END)
+    text_input.insert(0, expression[: -1])
+    
