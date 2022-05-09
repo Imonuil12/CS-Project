@@ -83,3 +83,8 @@ btn_reset.grid(row=1, column=5)
 btn_4 = Button(
     root, text="4", width=5, height=3, relief=FLAT, command=lambda: btn_click(4)
 )
+btn_4.grid(row=2, column=0)
+
+btn_5= Button(
+    root, text="5", width=5, height=3, relief=FLAT, command=lambda: btn_click(5)
+)
