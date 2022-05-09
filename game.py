@@ -55,4 +55,10 @@ def clear_one():
 btn_7 = Button(
     root, text="7", width=5, height=3, relief=FLAT, command=lambda: btn_click(7)
 )
+btn_7.grid(row=1, column=0)
+
+btn_8 = Button(
+    root, text="8", width=5, height=3, relief=FLAT, command=lambda: btn_click(8)
+)
+btn_8.grid(row=1, column=1)
 
