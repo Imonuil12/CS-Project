@@ -50,3 +50,9 @@ def clear_one():
     text_input.delete(0, END)
     text_input.insert(0, expression[: -1])
     
+#First Row
+
+btn_7 = Button(
+    root, text="7", width=5, height=3, relief=FLAT, command=lambda: btn_click(7)
+)
+
