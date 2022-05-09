@@ -72,3 +72,9 @@ btn_div = Button(
     root, text="/", width=5, height=3, relief=FLAT, command=lambda: btn_click("/")
 )
 btn_div.grid(row=1, column=3)
+
+btn_cos = Button(root, text="<", width=5, height=3, relief=FLAT, command=clear_one)
+btn_cos.grid(row=1, column=4)
+
+btn_reset = Button(root, text="c", width=5, height=3, relief=FLAT, command=clear)
+btn_reset.grid(row=1, column=5)
