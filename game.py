@@ -1,3 +1,4 @@
+from sre_parse import FLAGS
 from tkinter import *
 from math import *
 from turtle import clear
@@ -62,3 +63,12 @@ btn_8 = Button(
 )
 btn_8.grid(row=1, column=1)
 
+btn_9 = Button(
+    root, text="9", width=5, height=3, relief=FLAT, command=lambda: btn_click(9)
+)
+btn_9.grid(row=1, column=2)
+
+btn_div = Button(
+    root, text="/", width=5, height=3, relief=FLAT, command=lambda: btn_click("/")
+)
+btn_div.grid(row=1, column=3)
