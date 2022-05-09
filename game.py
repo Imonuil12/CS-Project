@@ -78,3 +78,8 @@ btn_cos.grid(row=1, column=4)
 
 btn_reset = Button(root, text="c", width=5, height=3, relief=FLAT, command=clear)
 btn_reset.grid(row=1, column=5)
+
+# Second Row
+btn_4 = Button(
+    root, text="4", width=5, height=3, relief=FLAT, command=lambda: btn_click(4)
+)
