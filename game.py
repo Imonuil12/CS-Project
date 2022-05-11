@@ -98,3 +98,13 @@ btn_6.grid(row=2, column=2)
 btn_mul = Button(
     root, text="x", width=5, height=3, relief=FLAT, command=lambda: btn_click("*")
 )
+
+btn_mul.grid(
+    row=2,
+    column=3,
+)
+
+btn_ob = Button(
+    root, text="(", width=5, height=3, relief=FLAT, command=lambda: btn_click("(")
+)
+btn_ob.grid(row=2, column=4)
