@@ -108,3 +108,20 @@ btn_ob = Button(
     root, text="(", width=5, height=3, relief=FLAT, command=lambda: btn_click("(")
 )
 btn_ob.grid(row=2, column=4)
+
+btn_cb = Button(
+    root, text=")", width=5, height=3, relief=FLAT, command=lambda: btn_click(")")
+)
+btn_cb.grid(row=2, column=5)
+
+# Third Row
+btn_1 = Button(
+    root, text="1", width=5, height=3, relief=FLAT, command=lambda: btn_click(1)
+)
+btn_1.grid(row=3, column=0)
+
+btn_2 = Button(
+    root, text="2", width=5, height=3, relief=FLAT, command=lambda: btn_click(2)
+)
+btn_2.grid(row=3, column=1)
+
