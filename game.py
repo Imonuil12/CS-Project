@@ -135,3 +135,19 @@ btn_minus = Button(
 )
 
 btn_minus.grid(row=3, column=3)
+
+btn_sq = Button(
+    root, text="x^2", width=5, height=3, relief=FLAT, command=lambda: btn_click("**2")
+
+)
+btn_sq.grid(row=3, column=4)
+
+btn_sqrt = Button(
+    root,
+    text="sqrt(x)",
+    width=5,
+    height=3,
+    relief=FLAT,
+    command=lambda: btn_click("**(1/2)"),
+)
+btn_sqrt.grid(row=3, column=5)
