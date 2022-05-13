@@ -151,3 +151,27 @@ btn_sqrt = Button(
     command=lambda: btn_click("**(1/2)"),
 )
 btn_sqrt.grid(row=3, column=5)
+
+# Forth Row
+
+btn_0 = Button(
+    root, text="0", width=5, height=3, relief=FLAT, command=lambda: btn_click(0)
+)
+btn_0.grid(row=4, column=0)
+
+btn_point = Button(
+    root, text=".", width=5, height=3, relief=FLAT, command=lambda: btn_click(".")
+)
+
+btn_point.grid(row=4, column=1)
+
+btn_percent = Button(
+    root, text="%", width=5, height=3, relief=FLAT, command=lambda: btn_click("%") 
+)
+
+btn_percent.grid(row=4, column=2)
+
+btn_plus = Button(
+    root, text="+", width=5, height=3, relief=FLAT, command=lambda: btn_click("+")
+)
+btn_plus.grid(row=4, column=3)
