@@ -125,3 +125,7 @@ btn_2 = Button(
 )
 btn_2.grid(row=3, column=1)
 
+btn_3 = Button(
+    root, text="3", width=5, height=3, relief=FLAT, command=lambda: btn_click(3)
+)
+btn_3.grid(row=3, column=2)
