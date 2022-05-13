@@ -175,3 +175,11 @@ btn_plus = Button(
     root, text="+", width=5, height=3, relief=FLAT, command=lambda: btn_click("+")
 )
 btn_plus.grid(row=4, column=3)
+
+btn_equal = Button(
+        root, text="=", width=14, height=3, background="#34b549", relief=FLAT, command=solve
+)
+
+btn_equal.grid(row=4, column=4, columnspan=2)
+
+root.mainloop
